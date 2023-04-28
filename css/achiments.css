@@ -1,0 +1,154 @@
+footer {
+	overflow: hidden;
+	bottom: 0;
+	width: 100%;
+	min-width: 100%;
+}
+.textih {
+	margin: auto;
+	width: 380px;
+	height: auto;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+.textih h1 {
+	margin-top: 40px;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	color: #fff;
+	font-size: 2em;
+	font-weight: 500;
+}
+.textih h2 {
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: 300;
+}
+.blockach1 {
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.blockach2 {
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.allach {
+	padding-top: 3%;
+}
+.ach {
+	overflow: hidden;
+	padding: 1%;
+	margin: 0 auto;
+}
+.ach#bg {
+	min-height: 700px;
+	height: auto;
+	border-radius: 25px;
+	background: rgb(20, 51, 51);
+	margin-top: 45px;
+	min-height: 500px;
+	max-width: 880px;
+	width: auto;
+}
+.ach#sm {
+	height: auto;
+	border-radius: 25px;
+	background: rgb(20, 51, 51);
+	margin-top: 45px;
+	min-height: 400px;
+	max-width: 700px;
+	width: auto;
+}
+.ach#bg h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+	color: #fff;
+	padding-top: 15px;
+}
+.ach#bg h2 {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.4em;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.inside .img {
+	padding-top: 20px;
+	max-height: 400px;
+	display: flex;
+}
+.inside .img img {
+	margin: 0 auto;
+	border: 1px solid;
+	object-fit: cover;
+	width: auto;
+	max-width: 280px;
+}
+.ach#sm .inside h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8em;
+	font-weight: 600;
+	color: #fff;
+	padding-top: 15px;
+}
+.ach#sm .inside h2 {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.3em;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+table {
+	margin: auto;
+}
+th {
+	width: auto;
+	height: 50px;
+}
+td {
+	width: 180px;
+	text-align: left;
+	height: 40px;
+}
+th#num {
+	width: 50px;
+}
+td#num {
+	width: 50px;
+}
+@media screen and (min-width:1440px) {
+	.blockall {
+		display: flex;
+	}
+}
+@media screen and (min-width:700px) {
+	table {
+		padding: 3%;
+		max-width: 760px;
+		width: auto;
+	}
+	td {
+		padding-left: 10px;
+	}
+	td#num {
+		padding-left: 2%;
+	}
+}
+@media screen and (max-width:700px) {
+	table {
+		padding-top: 3%;
+	}
+	td {
+		padding: 0;
+	}
+	td#num {
+		padding-left: 0;
+	}
+}

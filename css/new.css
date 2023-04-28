@@ -1,0 +1,79 @@
+.blocknew {
+    width: 1300px;
+    margin: auto;
+    background: rgb(20, 51, 51);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    min-height: 800px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.content {
+    height: auto;
+}
+.content .img {
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+.content .img img {
+    border:1px solid #000;
+    object-fit: cover;
+    width: 410px;
+    height:400px;
+}
+.content .date {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content .date h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+}
+.content .text {
+    max-width: 98%;
+    width: auto;
+}
+ .content .text h1 {
+    padding-bottom: 50px;
+    padding-left: 60px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.back {
+    position: relative;
+    width: 220px;
+    height: 35px;
+    background: rgba(15, 31, 31, 0.4);
+    font-size: 2em;
+    display: flex;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.back a {
+    text-decoration: none;
+    color: #fff;
+}
+.back a#ida {
+    padding-top: 5px;
+    padding-left: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .6em;
+}
+.back a ion-icon {
+    padding-left: 10px;
+    height: 25px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}

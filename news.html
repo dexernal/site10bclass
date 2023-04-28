@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/news.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<title>Новости 10"Б"класса</title>
+</head>
+<body>
+	<div class="menu">
+		<header>
+			<nav>
+				<div class="vmenu">
+					<div class="vlogo">
+						<ul>
+							<li>
+								<a href="index.html"><img src="img/logo10.png" height="90"  alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div class="pmenu">
+						<ul>
+							<li>
+								<a href="bio.html">Биография класса</a>
+							</li>
+							<li>
+								<a href="#news.html">Новости</a>
+							</li>
+							<li>
+								<a href="gallery.html">Галерея</a>
+							</li>
+							<li>
+								<nav class="navigation">
+									<button class="btnLogin">Войти</button>
+								</nav>
+							</li>
+						</ul>
+					</div>
+					<button class="burgermenu" aria-label="Открыть меню" aria-expanded="false">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="regwrapper">
+				<span class="icon-close">
+					<ion-icon name="close"></ion-icon>
+				</span>
+				<div class="form-box login">
+					<h2>Авторизация</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon"><ion-icon name="mail"></ion-icon></span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Запомнить меня
+							</label>
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<button type="submit" class="btn">Войти</button>
+						<div class="login-register">
+							<p>
+								У вас нет аккаунта?<a href="#" class="register-link">Зарегистрироваться</a>
+							</p>
+						</div>
+					</form>
+				</div>
+				<div class="form-box register">
+					<h2>Зарегистрироваться</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Имя пользователя</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Я согласен с правилами и условиями сайта
+							</label>
+						</div>
+						<button type="submit" class="btn">Зарегистрироваться</button>
+						<div class="login-register">
+							<p>
+								У вас уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="menuposle">
+				<article>
+					<div class="textih">
+						<h1>Новости класса и школы</h1>
+						<h2>
+							<span>✩</span>
+							<span>✩</span>
+							<span>✩</span>
+						</h2>
+					</div>
+				</article>
+				<article>
+					<div class="blocknews">
+						<div class="news">
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new1/volonterstvo.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>15 апреля 2023 года</h1>
+										<h2>
+											<p>Волонтеры 10 «Б» класса МБОУ «Обоянская СОШ № 2» помогли с огородом, вскопали грядки и привели в порядок двор ветерану педагогического труда Алексеевой Елене Дмитриевне.</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new1.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new2/patrgame.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>5 апреля 2023 года</h1>
+										<h2>
+											<p>Военно - патриотическая игра 1418.</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new2.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new3/dsladks.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>3 апреля 2023 года</h1>
+										<h2>
+											<p>В этот день волонтёры занимались уборкой территории вокруг храма Александра Невского: граблями и метлами, они убирали мусор, осеннюю листву, наводили порядок на клумбах, около плодовых деревьев.</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new3.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new4/uspexplat.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>26 марта 2023 года</h1>
+										<h2>
+											<p>На весенних каникулах в региональном центре выявления и поддержки одаренных детей «Успех» состоялся финал регионального трека Всероссийского конкурса научно-технологических проектов «Большие вызовы».</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new4.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new5/sYXYH0OWgdg.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>22 марта 2023 года</h1>
+										<h2>
+											<p>В рамках проведения Международной олимпиады по финансовой безопасности в нашей школе в период с 13 по 17 марта в старших классах был проведен Всероссийский тематический урок «Финансовая безопасность личности в сети Интернет»</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new5.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new6/ugAAVAr-2nU.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>10 марта 2023 года</h1>
+										<h2>
+											<p>Учащиеся 10 и 11 классов с большим интересом приняли участие в большом физическом диктанте (учитель Алисова Л.В.), по итогом которого были определены лучшие знатоки физических терминов и законов.<p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new6.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new7/8marta.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>8 марта 2023 года</h1>
+										<h2>
+											<p>Как мы девочек поздравляли... Фото отчет учащихся 10 " Б" класса.</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new7.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new">
+								<div class="content">
+									<div class="cont">
+										<div class="img">
+											<img src="img/news/new8/23fevr.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>23 февраля 2023 года</h1>
+										<h2>
+											<p>Девочки 10 "Б" класса вместе с классным руководителем Манаенко Светланой Григорьевной, устроили своим будущим защитникам отечества настоящий праздник.</p>
+										</h2>
+										</div>
+									</div>
+									<div class="buttonnew">
+										<div class="btnnew">
+											<a href="new8.html">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</main>
+		<footer>
+			<div class="low">
+				<div class="nmenu">
+					<div class="nlogo">
+						<ul>
+							<li>
+								<a href="index.html"><img src="img/logo10.png" alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div class="nspisok">
+						<ul>
+							<li>
+								<h1>Самое главное</h1>
+								<ul>
+									<li>
+										<a href="index.html">Главная страница</a>
+									</li>
+									<li>
+										<a href="bio.html">Биография класса</a>
+									</li>
+									<li>
+										<a href="news.html">Новости</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h1>Прочее страницы</h1>
+								<ul>
+									<li>
+										<a href="achiments.html">Наши достижения</a>
+									</li>
+									<li>
+										<a href="gallery.html">Наши фотографии</a>
+									</li>
+									<li>
+										<a href="raspisanie.html">Расписание уроков</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h1>Наши контакты</h1>
+								<ul>
+									<li>
+										<a href="https://vk.com/club215617032" target="_blank">Группа вконтакте</a>
+									</li>
+									<li>
+										<a href="">+7(920)200-20-20</a>
+									</li>
+									<li>
+										<a href="">10bschool@gmail.com</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="dft.js"></script>
+</body>
+</html>

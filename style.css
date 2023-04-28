@@ -1,0 +1,442 @@
+* {margin: 0;padding: 0;box-sizing: border-box;max-width: 100%;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(20, 70, 70);
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	background-size: cover;
+    background-position: center;
+    min-width: 600px;
+}
+.menu {width: 100%;height: 100%;}
+.vmenu {
+    min-width: 100%;
+	height: 88px;
+	position: relative;
+	background-color: rgb(20, 51, 51);
+	display: flex;
+    justify-content: space-between; 
+	line-height: 2.4; /*задаём высоту строки*/
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: 99999;
+} 
+.vmenu a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	font-weight: 500;
+} 
+.vlogo ul {
+	text-decoration: none;
+	list-style: none;
+}
+.vlogo a {
+	margin-left: 70px;
+	position: relative;
+}
+.vlogo a::after {
+	position: absolute;
+}
+.pmenu li {
+	display: inline-block;
+	font-size: 1.2em;	
+}
+.pmenu a {
+	padding: 0px 10px;
+	position: relative;
+	color: #ffffff; 
+	cursor: pointer;
+	text-decoration: none; 
+
+	margin-left: 30px;
+    margin-right: 20px;
+}
+.pmenu a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 3px; 
+	background-color: #ffffff; 
+	content: "";
+	transition: 0.5s ease-out; 
+}
+.pmenu a:hover:after, a:focus:after {
+	width: 100%;
+}
+.low {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: rgb(20, 51, 51);
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+.nmenu {
+    padding-bottom: 10px;
+}
+.nmenu .nspisok  h1 {
+	color: rgb(209, 209, 209);
+	margin-top: 15px;
+	margin-bottom: 6px;
+	font-weight: 600;
+	font-size: 1.6em;
+}
+.nmenu .nspisok  ul {
+    list-style: none;
+    margin-right: 6%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+/*Внешний список*/
+.nmenu .nspisok  ul li {
+    height: 110px;
+    min-width: 100px;
+    list-style: none;
+    margin-left: 3%;
+} 
+.nmenu .nspisok ul li ul {
+    margin-right: 80px;
+} 
+/*Внутренний список*/
+.nmenu .nspisok ul li ul li {
+	margin-bottom: 5px;
+	display: flex;
+    height: 20px;
+}
+.nmenu .nspisok ul li ul li a {
+	text-decoration: none;
+	color: rgb(222, 222, 222);
+	transition: 0.3s ease;
+    font-weight: 500;
+}
+.nmenu .nspisok ul li ul li a:hover {
+	color: #ffbb00;
+    text-decoration: underline;
+}
+.low .nmenu .nlogo {
+    width: 200px;
+    margin: auto;
+    margin-left: 5%;
+	float: left;
+	margin-top: 10px;
+}
+.low .nmenu .nlogo ul {
+    list-style: none;
+    text-decoration: none;
+}
+.low .nmenu .nlogo img {
+    height: 110px;
+}
+.regwrapper {
+    margin-top: 120px;
+    margin-left: 40%;
+	position: fixed;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+	transform: scale(0);
+	transition: transform .5s ease, height .2s ease;
+	z-index: 99999;
+}
+.regwrapper.active-popup {
+    transform: scale(1);
+}
+.regwrapper.active {
+	filter: brightness(100%);
+    height: 520px;
+}
+.regwrapper .form-box.login { 
+    transition: transform ease;
+    transform: translateX(0);
+}
+.regwrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-500px) ;
+}
+.regwrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(500px);
+}
+.regwrapper.active .form-box.register {
+    transition: transform ease;
+    transform: translateX(0);
+}
+.regwrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.regwrapper .form-box  {
+    width: 100%;
+    padding: 40px;
+}
+.regwrapper .form-box h2 {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+.regwrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+.regwrapper .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.regwrapper .input-box input:focus~label, .input-box input:valid~label {
+    top: -5px;
+}
+.regwrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.regwrapper .input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+}
+.regwrapper .remember-forgot {
+    color: #fff;
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.regwrapper .remember-forgot label input {
+    accent-color:#fff;
+    margin-right: 3px;
+}
+.regwrapper .remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+.regwrapper .remember-forgot a:hover {
+    text-decoration: underline;
+}
+.regwrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.regwrapper .login-register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.regwrapper .login-register p a {
+	padding-left: 2px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.regwrapper .login-register p a:hover {
+    text-decoration: underline;
+}
+.menuposle {
+	filter: brightness(100%);
+}
+.menuposle.active {
+	pointer-events: none;
+	filter: brightness(70%);
+}
+.vmenu.active {
+	pointer-events: none;
+	filter: brightness(70%);
+}
+@media screen and (max-width:500px) {
+    .nmenu .nspisok  ul li {
+        margin-left: 0;
+    }
+}
+.burgermenu {
+    padding: 0;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    margin-top: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.burgermenu span {
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    left: 5px;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+.burgermenu span:nth-child(1) {
+    transform: translateY(-10px);
+}
+.burgermenu span:nth-child(3) {
+    transform: translateY(10px);
+}
+.burgermenu.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+.burgermenu.active span:nth-child(2) {
+    opacity: 0;
+}
+.burgermenu.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+}
+@media screen and (max-width:1070px) {
+    .burgermenu {
+        display: block;
+    }
+    .pmenu {
+    background-color:rgba(20, 51, 51, 0.9);
+    display: flex;
+    position: fixed;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+    overflow-y: auto;
+    height: 376px;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    }
+    .pmenu.visible {  
+        border-left: 2px solid rgb(21,51,51);
+        transform: none;
+    }
+    .pmenu ul {
+        padding-top: 60px;
+    }
+    .pmenu ul li {
+        text-align: center;
+        display: block;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-bottom: 2px rgb(255, 255, 255) solid;
+        width: 100%;
+    }
+    .pmenu a:hover:after, a:focus:after {
+        width: 0;
+    }
+    .navigation .btnLogin {
+	    font-family: 'Roboto', sans-serif;
+        background: transparent;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        transition: .5s;
+        transform-origin: left;
+    }
+}
+@media screen and (min-width:1070px) {
+    .vmenu .pmenu ul {	
+        padding: 20px 10px;
+        list-style: none;
+    }
+    .burgermenu {
+        display: none;
+    }
+    .navigation .btnLogin {
+        width: 120px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid #fff;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 40px;
+        margin-right: 50px;
+        transition: .5s;
+        transform-origin: left;
+    }
+    .navigation .btnLogin:hover {
+        background-color: #fff;
+        color: black;
+    }
+}
+.stop-scroll {
+    overflow: hidden;
+}
+@media screen and (max-width:850px) {
+    .nmenu .nspisok ul li {
+       min-width: 100%;
+    }
+}
+@media screen and (max-width:1015px) {
+    .nlogo {
+        margin-right: 60px;
+    }
+    .nmenu .nspisok ul li {
+        margin-left: 30px;
+        display: inline-block;
+    }
+}
+@media screen and (min-width:1015px) {
+    .nmenu .nspisok ul {  
+        float: right;
+        white-space: nowrap;
+    }
+    .nmenu .nspisok ul li {
+        display: inline-block; 
+    }
+}

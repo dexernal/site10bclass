@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bio.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<title>Биография 10"Б"класса</title>
+</head>
+<body>
+	<div class="menu">
+		<header>
+			<nav>
+				<div class="vmenu">
+					<div class="vlogo">
+						<ul>
+							<li>
+								<a href="index.html"><img src="img/logo10.png" height="90"  alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div class="pmenu">
+						<ul>
+							<li>
+								<a href="bio.html">Биография класса</a>
+							</li>
+							<li>
+								<a href="news.html">Новости</a>
+							</li>
+							<li>
+								<a href="gallery.html">Галерея</a>
+							</li>
+							<li>
+								<nav class="navigation">
+									<button class="btnLogin">Войти</button>
+								</nav>
+							</li>
+						</ul>
+					</div>
+					<button class="burgermenu" aria-label="Открыть меню" aria-expanded="false">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="regwrapper">
+				<span class="icon-close">
+					<ion-icon name="close"></ion-icon>
+				</span>
+				<div class="form-box login">
+					<h2>Авторизация</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon"><ion-icon name="mail"></ion-icon></span>
+							<input type="email" required autocomplete="off" readonly
+							onfocus="this.removeAttribute('readonly');">
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+							<input type="password" required autocomplete="off" readonly
+							onfocus="this.removeAttribute('readonly');">
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Запомнить меня
+							</label>
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<button type="submit" class="btn">Войти</button>
+						<div class="login-register">
+							<p>
+								У вас нет аккаунта?<a href="#" class="register-link">Зарегистрироваться</a>
+							</p>
+						</div>
+					</form>
+				</div>
+				<div class="form-box register">
+					<h2>Зарегистрироваться</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person"></ion-icon>
+							</span>
+							<input type="text" required  autocomplete="off" readonly
+							onfocus="this.removeAttribute('readonly');">
+							<label>Имя пользователя</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail"></ion-icon>
+							</span>
+							<input type="email" required  autocomplete="off" readonly
+							onfocus="this.removeAttribute('readonly');">
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed"></ion-icon>
+							</span>
+							<input type="password" required  autocomplete="off" readonly
+							onfocus="this.removeAttribute('readonly');">
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Я согласен с правилами и условиями сайта
+							</label>
+						</div>
+						<button type="submit" class="btn">Зарегистрироваться</button>
+						<div class="login-register">
+							<p>
+								У вас уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>	
+			<div class="menuposle">
+				<article>
+					<div class="block1-2">
+						
+						<div class="bioimg">
+							<div class="containerh">
+								<h1>Биография 10 "Б"класса МБОУ СОШ №2</h1>
+							</div>
+						</div>
+						<div class="spisok">
+							<div class="verxblock">
+								<h1>Ученики 10"Б"класса</h1>
+							</div>
+							<div class="nizblock">
+								<div class="nizspisok">
+									<ul class="stb1">
+										<li>
+											<a class="vech" href="#Likhachev">Лихачев Артем</a>
+										</li>
+										<li>
+											<a href="#Viscribencev">Выскребенцев Вячеслав</a>
+										</li>
+										<li>
+											<a href="#Platonova">Платонова Мария</a>
+										</li>
+										<li>
+											<a href="#Tkacheva">Ткачева Мария</a>
+										</li>
+										<li>
+											<a href="#Chalceva">Чальцева Елизавета</a>
+										</li>
+										<li>
+											<a href="#Orlov">Орлов Игорь</a>
+										</li>
+										<li>
+											<a href="#Klimova">Климова Алина</a>
+										</li>
+										<li>
+											<a href="#Levkov">Левков Александр</a>
+										</li>
+										<li>
+											<a href="#Halin">Халин Илья</a>
+										</li>
+										<li>
+											<a href="#Rusanov">Русанов Даниил</a>
+										</li>
+									</ul>
+									<ul class="stb2">
+										<li>
+											<a class="vech" href="#Chuikova">Чуйкова Софья</a>
+										</li>
+										<li>
+											<a href="#Vervetchenko">Верветченко Анжелика</a>
+										</li>
+										<li>
+											<a href="#Bosih">Босых Дмитрий</a>
+										</li>
+										<li>
+											<a href="#Zorina">Зорина Юлия</a>
+										</li>
+										<li>
+											<a href="#Trusov">Трусов Никита</a>
+										</li>
+										<li>
+											<a href="#Shikarev">Шикарев Роман</a>
+										</li>
+										<li>
+											<a href="#Dorohov">Дорохов Виктор</a>
+										</li>
+										<li>
+											<a href="#Medvedeva">Медведева Мария</a>
+										</li>
+										<li>
+											<a href="#Borvenko">Борвенко Анна</a>
+										</li>
+										<li>
+											<a href="#Stepanez">Степанец Ксения</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<div class="vseycheniki">
+						<div class="okajdomiz">
+							<h1>Немного о каждом из нас</h1>
+						</div>
+						<div class="ychblock" id="ychblock">
+							<ul class="stb1">
+								<li>
+									<div class="bioych" id="Likhachev">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/likhachev.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Лихачев Артем</h1>
+											<h2>Хорошист, стремящийся к развитии в сфере IT-технологий, а также разработчик сайта 10"Б"Класса МБОУ СОШ №2</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Viscribencev">
+										<div class="bio">
+											<div class="biophoto">
+												<h1>Здесь должно быть фото</h1>
+											</div>
+											<div class="text" id="textbio">
+												<h1>Выскребенцев Вячеслав</h1>
+											<h2>
+												<p></p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Platonova">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/Platonova.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Платонова Мария</h1>
+											<h2>
+												<p>✨Меня всегда воодушевляют слова Брюса Ли: "Нет такой фразы - "Я не могу". Смог один, смогут и другие. Не смог никто - будь первым! "Эти слова - моё жизненное кредо✨</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Tkacheva">
+										<div class="bio">
+											<div class="biophoto">
+												<h1>Здесь должно быть фото</h1>
+											</div>
+											<div class="text" id="textbio">
+												<h1>Ткачева Мария</h1>
+											<h2>
+												<p></p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Chalceva">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/chalceva.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Чальцева Елизавета</h1>
+											<h2>
+												<p>Я не пытаюсь танцевать лучше, чем кто-либо другой. Я пытаюсь танцевать только лучше самого себя.</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Orlov">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/orlov.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Орлов игорь</h1>
+											<h2>
+												<p>Мистер справочник</p>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Klimova">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/klimova.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Климова Алина</h1>
+											<h2>
+												<p>Типо книжки читаю</p>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Levkov">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/levkov.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Левков Александр</h1>
+											<h2>
+												<p>Кто-то учится, а я отдыхаю</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Halin">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/halin.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Халин Илья</h1>
+											<h2>
+												<p>Молодой Тони Страк, могу сделать что угодно, кроме ядерного реактора. Обожаю музыку, но нет определённой категории, сегодня нравится одно, завтра другое. Быстро учусь, могу приспособиться к любым условиям, хорошо разбираюсь в логистике, робототехнике и немного архитектор. Хороший и надёжный друг, человек слова. В основном делаю то, что нравится.</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Rusanov">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/rusanov.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Русанов Даниил</h1>
+											<h2>
+												<p>Не сделал логотип для сайта класса</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="stb2">
+								<li>
+									<div class="bioych" id="Chuikova">
+										<div class="bio">
+											<div class="biophoto">
+												<h1>Здесь должно быть фото</h1>
+											</div>
+											<div class="text" id="textbio">
+												<h1>Чуйкова Софья</h1>
+											<h2>
+												<p></p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Vervetchenko">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/vervetchenko.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Верветченко Анжелика</h1>
+											<h2>
+												<p>Если ты собираешься в один прекрасный день создать что-то великое, помни – один прекрасный день – это сегодня.</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Bosih">
+										<div class="bio">
+											<div class="biophoto">
+												<h1>Здесь должно быть фото</h1>
+											</div>
+											<div class="text" id="textbio">
+												<h1>Босых Дмитрий</h1>
+											<h2>
+												<p></p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Zorina">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/zorina.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Зорина Юлия</h1>
+											<h2>
+												<p>Юный литератор, безумно обожающий Брэма Стокера и Говарда Лавкрафта, люблю рисовать, портретист, занимаюсь росписью одежды. Начинающий таролог, нахожу прекрасное даже в мелочах, за 5 минут могу сочинить стишок.</p><br>
+												<p>Красивая, милая, умная, сообразительная, творческая, улыбчивая, жизнерадостная и просто мамина радость.</p>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Trusov">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/trusov.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Трусов Никита</h1>
+											<h2>
+												<p>А ведь случается же иногда заблудиться так человеку в собственных чувствах своих да занести окелесную. Это ни от чего иного происходит, как от излишней, глупой горячности сердца " Фёдор Михайлович Достоевский</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Shikarev">
+										<div class="bio">
+											<div class="biophoto">
+												<img src="img/bio/shikarev.jpg" alt="">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+											</div>
+											<div class="text" id="textbio">
+												<h1>Шикарев Роман</h1>
+											<h2>
+												<p>Цитату не знаю какую</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Dorohov">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/viktor.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Дорохов Виктор</h1>
+											<h2>Мрачный тип, любит паркур</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Medvedeva">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/medvedeva.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Медведева Мария</h1>
+											<h2>
+												<p>Я, конечно, домосед, но внимание привлекать тоже люблю</p><br>
+												<p>Из увлечений: обожаю яркий макияж, делать фотографии природы, придумывать новые рецепты. изучаю религии, мировоззрении.</p><br>
+												<p>Отчасти страдаю эскапизмом</p>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Borvenko">
+										<div class="bio">
+											<div class="biophoto">
+												<h1>Здесь должно быть фото</h1>
+											</div>
+											<div class="text" id="textbio">
+												<h1>Борвенко Анна</h1>
+											<h2>
+												<p></p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bioych" id="Stepanez">
+										<div class="bio">
+											<div class="biophoto">
+												<!-- <h1>Здесь должно быть фото</h1> -->
+												<img src="img/bio/stepanez.jpg" alt="">
+											</div>
+											<div class="text" id="textbio">
+												<h1>Степанец Ксения</h1>
+											<h2>
+												<p>Брбр зю хочу</p><br>
+											</h2>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<footer>
+					<div class="low">
+						<div class="nmenu">
+							<div class="nlogo">
+								<ul>
+									<li>
+										<a href="index.html"><img src="img/logo10.png" alt=""></a>
+									</li>
+								</ul>
+							</div>
+							<div class="nspisok">
+								<ul>
+									<li>
+										<h1>Самое главное</h1>
+										<ul>
+											<li>
+												<a href="index.html">Главная страница</a>
+											</li>
+											<li>
+												<a href="bio.html">Биография класса</a>
+											</li>
+											<li>
+												<a href="news.html">Новости</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<h1>Прочее страницы</h1>
+										<ul>
+											<li>
+												<a href="achiments.html">Наши достижения</a>
+											</li>
+											<li>
+												<a href="gallery.html">Наши фотографии</a>
+											</li>
+											<li>
+												<a href="raspisanie.html">Расписание уроков</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<h1>Наши контакты</h1>
+										<ul>
+											<li>
+												<a href="https://vk.com/club215617032" target="_blank">Группа вконтакте</a>
+											</li>
+											<li>
+												<a href="">+7(920)200-20-20</a>
+											</li>
+											<li>
+												<a href="">10bschool@gmail.com</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</main>
+	</div>
+	<script src="prokrbi.js"></script>
+</body>
+</html>

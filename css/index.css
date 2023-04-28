@@ -1,0 +1,386 @@
+.wrapper1 {
+    min-width: 100%;
+	background: url(img/school.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 550px;
+    height: auto;
+	z-index: 999;
+}
+.container1 {
+	padding-top: 150px;
+	text-align: center;
+	position: relative;
+}
+.wrapper1 h1{
+	font-weight: 500;
+	color: #ffffff;
+	display: block;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 3.5em;
+}
+.wrapper1 h2{
+	font-weight: 400;
+	color: #ffffff;
+	padding: 5px 15px;
+	margin-top: 20px;
+	display: block;
+	font-size: 20px;
+}
+.wrapper1 .kvop{
+	outline: none;
+	cursor: pointer;
+	background-color:rgb(20, 70, 70);/*ГРАДИЕНТ КНОПКИ ПОД 45 наклоном*/
+    width: 300px;
+    height: 70px;
+	border: 0;
+    margin-top: 50px;
+    color: #ffffff; /*ЦВЕТ ШРИФТА ВНУТРИ КНОПКИ*/
+    line-height: 30px;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    border-radius: 15px;
+	font-size: 0.9em;
+    z-index: 10;
+}
+.wrapper2 {
+	width: 100%;
+    overflow: hidden;
+    height: auto;
+	z-index: 99999;
+    margin-bottom: 60px;
+}
+.container2 {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.container2 img {
+	border: 1px solid;
+	margin-left: 50px;
+	float: left; 
+	margin-right: 50px;
+	width: 500px; 
+	height: 600px;
+}
+.container2 h1 {
+	list-style:outside;
+	color: #ffffff;
+	padding-top: 20px;
+	font-weight: 600;
+	font-size: 2em;
+}
+.container2 h2 {
+    width: auto;
+    max-width: 900px;
+    overflow: hidden;
+	color: #ffffff;
+	font-weight: 500;
+	margin-top: 20px;
+	padding-right: 20px;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.wrapper3 {
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: rgb(20, 51, 51);
+    min-width: 100%;
+}
+.text3 h1 {
+    padding-top: 30px;
+	font-weight: 600;
+	font-size: 2em;
+	color: #ffffff;
+}
+.text3 h2 {
+	padding-top: 10px;
+	font-weight: 400;
+	color: #ffffff;
+}
+.container3 {
+    max-width: 1900px;
+    height: auto;
+    max-height: 100%;
+	text-decoration: none;
+	list-style: none;
+}
+.container3 ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+	list-style: none;
+    display: flex;
+    align-items: center;
+}
+.container3 ul li {
+    margin-left: 35px;
+    margin-right: 35px;
+	margin-top: 50px;
+    margin-bottom: 20px;
+}
+.container3 img {
+    display: inline-block;
+    object-fit:cover;
+	border: 1px solid;
+	position: relative;
+	width: 450px; 
+	height: 350px;
+	filter: brightness(70%);
+	transition: 1s;
+}
+.container3 img:hover {
+	filter: brightness(100%);
+}
+.vsephoto {
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	background-color: rgb(20, 51, 51);
+	height: auto;
+}
+.ssilka {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+.ssilka a {
+	font-weight: 400;
+	position: relative;
+	text-decoration: none;
+	color: #ffbb00;
+	font-size: 1.4em;
+}
+.ssilka a::before {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #ffbb00;
+	content: "";
+	height: 1px;
+}
+.ssilka a::before, a:focus::before {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.wrapper4 {
+    overflow: hidden;
+    width: 100%;
+	margin-top: 100px;
+    height: auto;
+	margin-bottom: 20px;
+}
+.bio {
+    min-width: none;
+    margin-right: 10%;
+	color: #ffffff;
+}
+.bio h1 {
+	padding-top: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+}
+.bio h2 {
+    max-width: 1200px;
+    width: auto;
+    overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-weight: 500 ;
+}
+.kartinka img {
+    position: relative;
+	border: 1px solid;
+	margin-left: 50px;
+	float: left;
+	margin-right: 50px;
+	max-width: 500px; 
+	max-height: 600px;
+}
+.vopwrapper {
+    margin-top: 120px;
+    margin-left: 750px;
+	position: fixed;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+	transform: scale(0);
+	transition: transform .5s ease, height .2s ease;
+	z-index: 99999;
+}
+.vopwrapper.active-popup {
+    transform: scale(1);
+}
+.vopwrapper.popup {
+	filter: brightness(100%);
+    height: 300px;
+}  
+.vopwrapper .form-box.vopros { 
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.vopwrapper.popup .form-box.vopros {
+    transition: none;
+    transform: translateX(-400px) ;
+}
+.vopwrapper .form-box.otvet {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.vopwrapper.popup .form-box.otvet {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}  
+.vopwrapper .vicon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.vopwrapper .form-box  {
+    width: 100%;
+    padding: 40px;
+}
+.vopwrapper .form-box h2 {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.vopwrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+.vopwrapper .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.vopwrapper .input-box input:focus~label, .input-box input:valid~label {
+    top: -5px;
+}
+.vopwrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.vopwrapper .input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+}
+.vopwrapper .btn.kvop {
+    width: 100%;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.menuposle {
+    filter: brightness(100%);
+}
+.menuposle.active {
+	filter: brightness(40%);
+}
+.vmenu.active {
+	filter: brightness(70%);
+}
+.btnvop {
+    width: 100%;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.btnotv {
+    width: 100%;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 50px;
+    transition: all .5s ease;
+}
+.btnotv:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+}
+@media screen and (max-width:540px) {
+    .wrapper1 .kvop{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:930px) {
+    .container2 img {
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+    .container2 h1, .container2 h2  {
+        margin-left: 10px;
+    }
+    .kartinka img {
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+    .bio h1, .bio h2 {
+        margin-left: 15px;
+    } 
+}

@@ -1,0 +1,116 @@
+.textih {
+	margin: auto;
+	width: 340px;
+	height: auto;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+.textih h1 {
+	margin-top: 40px;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	color: #fff;
+	font-size: 2em;
+	font-weight: 500;
+}
+.textih h2 {
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: 300;
+}
+.blocknews {
+	margin-top: 40px;
+}
+.news {
+	margin: 0 auto;
+	flex-wrap: wrap;
+	position: relative;
+	height: auto;
+	width: 1400px;
+}
+.news .new {
+	min-width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: rgba(124, 128, 128, 0.16);
+	height: 540px;
+	width: 400px;
+	margin-bottom: 50px;
+	border: 1px solid rgb(20, 51, 51);
+	border-radius: 5px;
+}
+.cont {
+	height: 440px;
+}
+.news .new .content {
+	height: 500px;
+	margin-bottom: 20px;
+}
+.news .new .content img {
+	object-fit: cover;
+	border-bottom: 2px solid rgba(20, 51, 51);
+	height: 220px;
+	width: 100%;
+}
+.news .new .content h1 {
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+	padding-top: 10px;
+}
+.news .new .content h2 {
+	width: 100%;
+	color: #fff;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.buttonnew {
+	margin-top: 40px;
+	width: 100%;
+}
+.btnnew a {
+	margin-left: 24%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	height: 40px;
+	width: 220px;
+	text-align: center;
+	border: 1px solid;
+	border-color: rgb(216, 186, 19);
+	transition: .7s ease;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: rgb(216, 186, 19);
+	transition: .7s ease;
+}
+.btnnew:hover, .btnnew:focus {
+	border-color: #000000;
+}
+.btnnew a:hover, .btnnew a:focus {
+	border-color: #000000;
+	color: #000000;
+	background-color: rgb(216, 186, 19);
+}
+@media screen and (min-width:1320px) {
+	.news {
+		display: flex;
+	}
+}
+@media screen and (min-width:1050px) {
+	.news {
+		display: flex;
+	}
+}

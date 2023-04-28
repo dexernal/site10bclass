@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/galder.css">
+	<link href="lightbox.css" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<title>Галерея</title>
+</head>
+<body>
+	<div class="menu">
+		<header>
+			<nav>
+				<div class="vmenu">
+					<div class="vlogo">
+						<ul>
+							<li>
+								<a href="index.html"><img src="img/logo10.png" height="90" alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div class="pmenu">
+						<ul>
+							<li>
+								<a href="bio.html">Биография класса</a>
+							</li>
+							<li>
+								<a href="news.html">Новости</a>
+							</li>
+							<li>
+								<a href="gallery.html">Галерея</a>
+							</li>
+							<li>
+								<nav class="navigation">
+									<button class="btnLogin">Войти</button>
+								</nav>
+							</li>
+						</ul>
+					</div>
+					<button class="burgermenu" aria-label="Открыть меню" aria-expanded="false">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="regwrapper">
+				<span class="icon-close">
+					<ion-icon name="close"></ion-icon>
+				</span>
+				<div class="form-box login">
+					<h2>Авторизация</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon"><ion-icon name="mail"></ion-icon></span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Запомнить меня
+							</label>
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<button type="submit" class="btn">Войти</button>
+						<div class="login-register">
+							<p>
+								У вас нет аккаунта?<a href="#" class="register-link">Зарегистрироваться</a>
+							</p>
+						</div>
+					</form>
+				</div>
+				<div class="form-box register">
+					<h2>Зарегистрироваться</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Имя пользователя</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Я согласен с правилами и условиями сайта
+							</label>
+						</div>
+						<button type="submit" class="btn">Зарегистрироваться</button>
+						<div class="login-register">
+							<p>
+								У вас уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="menuposle">
+				<div class="container">
+					<div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true">
+						<div class="itc-slider__wrapper">
+							<div class="itc-slider__items">
+							<div class="itc-slider__item">
+								<img src="img/gorod.jpg" alt="">
+							</div>
+							<div class="itc-slider__item">
+								<img src="img/fire.jpg" alt="">
+							</div>
+							<div class="itc-slider__item">
+								<img src="img/gorod.jpg" alt="">
+							</div>
+							<div class="itc-slider__item">
+								<img src="img/zakat.jpg" alt="">
+							</div>
+							<div class="itc-slider__item">
+								<img src="img/luna.jpg" alt="">
+							</div>
+							</div>
+						</div>
+						<button class="itc-slider__btn itc-slider__btn_prev">
+							<ion-icon class="iconar"  name="chevron-back-outline"></ion-icon>
+						</button>
+						<button class="itc-slider__btn itc-slider__btn_next">
+							<ion-icon class="iconar" name="chevron-forward-outline"></ion-icon>
+						</button>
+						<ol class="itc-slider__indicators">
+							<li class="itc-slider__indicator" data-slide-to="0"></li>
+							<li class="itc-slider__indicator" data-slide-to="1"></li>
+							<li class="itc-slider__indicator" data-slide-to="2"></li>
+							<li class="itc-slider__indicator" data-slide-to="3"></li>
+							<li class="itc-slider__indicator" data-slide-to="4"></li>
+						</ol>
+					</div>
+				</div>
+				<div class="jave">
+					<div class="jave2">
+						<h1>Галерея</h1>
+						<h2>Фотографии нашего класса</h2>
+						<div class="grid" id="grid">
+							<div class="grid-item">
+								<a href="img/mi.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/mi.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/10b.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/10b.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/k.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/k.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/nag.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/nag.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/1sent.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/1sent.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/cEn.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/cEn.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/dk.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/dk.jpg" alt="Фотография класса">
+								</a>
+							</div>
+							<div class="grid-item">
+								<a href="img/k.jpg" data-lightbox="image-1" data-title="Наше фото">
+									<img  src="img/k.jpg" alt="Фотография класса">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="btn-center">
+						<button class="show-more">Показать ещё</button>
+					</div>
+				</div>
+				<footer>
+					<div class="low">
+						<div class="nmenu">
+							<div class="nlogo">
+								<ul>
+									<li>
+										<a href="index.html"><img src="img/logo10.png" alt=""></a>
+									</li>
+								</ul>
+							</div>
+							<div class="nspisok">
+								<ul>
+									<li>
+										<h1>Самое главное</h1>
+										<ul>
+											<li>
+												<a href="index.html">Главная страница</a>
+											</li>
+											<li>
+												<a href="bio.html">Биография класса</a>
+											</li>
+											<li>
+												<a href="news.html">Новости</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<h1>Прочее страницы</h1>
+										<ul>
+											<li>
+												<a href="achiments.html">Наши достижения</a>
+											</li>
+											<li>
+												<a href="gallery.html">Наши фотографии</a>
+											</li>
+											<li>
+												<a href="raspisanie.html">Расписание уроков</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<h1>Наши контакты</h1>
+										<ul>
+											<li>
+												<a href="https://vk.com/club215617032" target="_blank">Группа вконтакте</a>
+											</li>
+											<li>
+												<a href="">+7(920)200-20-20</a>
+											</li>
+											<li>
+												<a href="">10bschool@gmail.com</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</main>
+		</div>
+	</div>
+	<script src="js/lightbox-plus-jquery.js"></script>
+	<script src="js/itc-slider.js" defer></script>
+</body>
+</html>

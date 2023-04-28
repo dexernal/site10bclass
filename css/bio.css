@@ -1,0 +1,295 @@
+.menuposle .block1-2 {
+	height: 520px;
+	position: relative;
+	display: flex;
+}
+.menuposle .spisok {
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+	min-width: 40%;
+}
+.menuposle .verxblock {
+	border-bottom: 1px solid black;
+	background-color: rgb(21, 43, 43);
+	height: 60px;
+}
+.menuposle .verxblock h1 {
+	color: rgb(201, 165, 39);
+	font-size: 26px;
+	font-weight: 500;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 12px;
+}
+.menuposle .nizblock {
+	background-color: rgb(20, 56, 56);
+	height: 460px;
+}
+.menuposle .nizspisok {
+	display: flex;
+	align-items: center;
+}
+.menuposle .nizspisok ul {
+	margin: 20px auto;
+	list-style: none;
+	position: static;
+}
+.menuposle .nizspisok ul li {
+	padding-bottom: 24px;
+}
+.menuposle .nizspisok ul li a {
+	text-decoration: none;
+	color: rgb(197, 202, 134);
+	position: relative;
+	transition: 1s;
+}
+.menuposle .nizspisok ul li a:after {
+	content: "";
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    background: rgb(233, 185, 11);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+.menuposle .nizspisok ul li a:hover {
+	color: rgb(233, 185, 11);
+}
+.menuposle .nizspisok ul li a:hover:after {
+    transform: scaleX(1);
+}
+.menuposle .bioimg {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background: url(img/klass.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.menuposle .bioimg img {
+	object-fit: cover;
+}
+.menuposle .bioimg .containerh {
+	margin-top: 220px;
+	text-align: center;
+	position: relative;
+}
+.menuposle .bioimg .containerh h1 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 32px;
+	font-weight: 600;
+	color: #fff;
+	flex-wrap: wrap;
+	width: 100%;
+} 
+.vseycheniki {
+	width: 100%;
+    height: auto;
+}
+.ychblock {
+	position: relative;
+	margin-bottom: 0;
+	position: relative;
+	margin-left: 2%;
+	align-items: center;
+}
+.ychblock ul {
+	justify-content: center;
+	max-width: 980px;
+	margin: 0 auto;
+	align-items: center;
+	list-style: none;
+}
+.ychblock ul li {
+	min-width: 50%;
+}
+.vseycheniki {
+	height: auto;
+}
+.vseycheniki .okajdomiz {
+	min-width: 100%;
+}
+.vseycheniki .okajdomiz h1 {
+	margin-top: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	color: #ffffff;
+	text-align: center;
+}
+.vseycheniki .bioych {
+	min-width: 500px;
+	white-space: wrap;
+	margin-top: 6%;
+	margin-bottom: 2%;
+	margin-right: 10px;
+}
+.vseycheniki .biophoto {
+	border-radius: 10px;
+	margin-right: 2%;
+	border: 1px solid rgb(0, 0, 0);
+	float: left;
+	max-width: 320px;
+	max-height: 280px;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(96, 96, 96, 0.41);
+}
+.vseycheniki .biophoto h1 {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	color: rgb(233, 185, 11);
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	margin-top: 40%;
+}
+.vseycheniki .biophoto img {
+	border-radius: 10px;
+	border: 1px solid rgb(0, 0, 0);
+	max-width: 320px;
+	max-height: 280px;
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+} 
+@media screen and (max-width:900px) {
+	.vseycheniki .biophoto {
+		max-width: 320px;
+		max-height: 280px;
+		min-height: 260px;
+		width: auto;
+		height: auto;
+	}
+	.vseycheniki .biophoto img {
+		max-width: 320px;
+		max-height: 280px;
+		min-height: 260px;
+		width: auto;
+		height: auto;
+	}
+}
+.bio {
+	min-width:100% ;
+	padding-bottom: 8%;
+}
+.bio .text {
+	height: 300px;
+	width: 820px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255);
+}
+.bio .text h1 {
+	font-family: 'Times New Roman', Times, serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 2em;
+	font-weight: 600;
+}	
+.bio .text h2 {
+	width: auto;
+	max-width: 920px;
+	font-size: 1.6em;
+	font-weight: 400;
+}
+@media screen and (min-width: 1700px) {
+	#ychblock {
+		display: flex;
+	}
+	.bioych#Platonova .text h2 {
+		max-width: 800px;
+	}
+	.bioych#Zorina .text h2 {
+		max-width: 870px;
+		width: 840px;
+	}
+	.bioych#Halin .text h2 {
+		max-width: 920px;
+		width: 840px;
+	}
+	.bioych#Chalceva .text h2 {
+		max-width: 860px;
+	}
+	.bioych#Vervetchenko .text h2 {
+		max-width: 840px;
+	}
+	.bioych#Medvedeva .text h2 {
+		max-width: 880px;
+		width: 865px;
+	}
+	.bioych#Likhachev .text h2 {
+		width: 880px;
+		max-width: 880px;
+	}
+}
+@media screen and (max-width: 900px) {
+	#textbio {
+		width: auto;
+	}
+	.bioych {
+		margin-left: 50px;
+		height: auto;
+		position: relative;
+	}
+	.bioych .text h2 {
+		width: auto;
+		max-width: 800px;
+	}
+	.nmenu {
+		margin-left: 20%;
+	}
+	.bioych#Platonova .text h2 {
+		max-width: 800px;
+	}
+	.bioych#Zorina .text h2 {
+		max-width: 820px;
+		width: auto;
+		margin-left: 25px;
+	}
+	.bioych#Halin .text h2 {
+		max-width: 740px;
+		width: auto;
+	}
+	.bioych#Chalceva .text h2 {
+		max-width: 860px;
+	}
+	.bioych#Vervetchenko .text h2 {
+		max-width: 840px;
+	}
+	.bioych#Medvedeva .text h2 {
+		max-width: 820px;
+		width: auto;
+	}
+	.bioych#Likhachev .text h2 {
+		width: auto;
+		max-width: 820px;
+	}
+	.bioych#Rusanov{
+		margin-top: 120px;
+	}
+	.bioych#Trusov{
+		margin-top: 180px;
+	}
+	.bioych#Borvenko{
+		margin-top: 130px;
+	}
+	::-webkit-scrollbar { width: 0; }
+}
+@media screen and (min-width:1200px) {
+	.menuposle .bioimg {
+		min-width: 70%;
+	}
+	.menuposle .spisok {
+		min-width: 30%;
+	}
+}
+@media screen and (max-width:1200px) {
+	.menuposle .bioimg {
+		min-width: 48%;
+	}
+	.menuposle .spisok {
+		min-width: 52%;
+	}
+}

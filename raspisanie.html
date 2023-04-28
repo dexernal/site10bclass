@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/raspisanie.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<title>Расписание уроков 10"Б"класса</title>
+</head>
+<body>
+	<div class="menu">
+		<header>
+			<nav>
+				<div class="vmenu">
+					<div class="vlogo">
+						<ul>
+							<li>
+								<a href="index.html"><img src="img/logo10.png" height="90"  alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div class="pmenu">
+						<ul>
+							<li>
+								<a href="bio.html">Биография класса</a>
+							</li>
+							<li>
+								<a href="#news.html">Новости</a>
+							</li>
+							<li>
+								<a href="gallery.html">Галерея</a>
+							</li>
+							<li>
+								<nav class="navigation">
+									<button class="btnLogin">Войти</button>
+								</nav>
+							</li>
+						</ul>
+					</div>
+					<button class="burgermenu" aria-label="Открыть меню" aria-expanded="false">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="regwrapper">
+				<span class="icon-close">
+					<ion-icon name="close"></ion-icon>
+				</span>
+				<div class="form-box login">
+					<h2>Авторизация</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon"><ion-icon name="mail"></ion-icon></span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Запомнить меня
+							</label>
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<button type="submit" class="btn">Войти</button>
+						<div class="login-register">
+							<p>
+								У вас нет аккаунта?<a href="#" class="register-link">Зарегистрироваться</a>
+							</p>
+						</div>
+					</form>
+				</div>
+				<div class="form-box register">
+					<h2>Зарегистрироваться</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Имя пользователя</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label>
+								<input type="checkbox">Я согласен с правилами и условиями сайта
+							</label>
+						</div>
+						<button type="submit" class="btn">Зарегистрироваться</button>
+						<div class="login-register">
+							<p>
+								У вас уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="menuposle">
+				<article>
+					<div class="textras">
+						<h1>Расписание уроков 10”Б”класса</h1>
+					</div>
+				</article>
+				<article>
+					<div class="table">
+						<table>
+							<colgroup>
+							  <col span="6" style="background:Khaki">
+							</colgroup>
+							<tr>
+								<th id="num">№</th>
+								<th>Понедельник</th>
+								<th>Вторник</th>
+								<th>Среда</th>
+								<th>Четверг</th>
+								<th>Пятница</th>
+							</tr>
+							<tr>
+								<td id="num">1</td>
+								<td>Разговоры о важном</td>
+								<td>Геометрия</td>
+								<td>Алгебра</td>
+								<td>Русский язык</td>
+								<td>Обществознание</td>
+							</tr>
+							<tr>
+								<td id="num">2</td>
+								<td>Информатика</td>
+								<td>Физика</td>
+								<td>Биология</td>
+								<td>ОБЖ</td>
+								<td>Алгебра</td>
+							</tr>
+							<tr>
+								<td id="num">3</td>
+								<td>История</td>
+								<td>Обществознание</td>
+								<td>Биология</td>
+								<td>Физика</td>
+								<td>География</td>
+							</tr>
+							<tr>
+								<td id="num">4</td>
+								<td>Литература</td>
+								<td>Литература</td>
+								<td>Английский язык</td>
+								<td>ИП</td>
+								<td>Физкультура</td>
+							</tr>
+							<tr>
+								<td id="num">5</td>
+								<td>Основы педагогики</td>
+								<td>Русский язык</td>
+								<td>Алгебра</td>
+								<td>Геометрия</td>
+								<td>Литература</td>
+							</tr>
+							<tr>
+								<td id="num">6</td>
+								<td>Алгебра</td>
+								<td>Биология</td>
+								<td>Химия</td>
+								<td>Английский язык</td>
+								<td>Родной язык</td>
+							</tr>
+							<tr>
+								<td id="num">7</td>
+								<td>Педагогическая практика</td>
+								<td>Английский язык</td>
+								<td>История</td>
+								<td>Физкультура</td>
+								<td>Астрономия</td>
+							</tr>
+						  </table>
+					</div>
+				</article>
+			</div>
+			<footer>
+				<div class="low">
+					<div class="nmenu">
+						<div class="nlogo">
+							<ul>
+								<li>
+									<a href="index.html"><img src="img/logo10.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<div class="nspisok">
+							<ul>
+								<li>
+									<h1>Самое главное</h1>
+									<ul>
+										<li>
+											<a href="index.html">Главная страница</a>
+										</li>
+										<li>
+											<a href="bio.html">Биография класса</a>
+										</li>
+										<li>
+											<a href="news.html">Новости</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h1>Прочее страницы</h1>
+									<ul>
+										<li>
+											<a href="achiments.html">Наши достижения</a>
+										</li>
+										<li>
+											<a href="gallery.html">Наши фотографии</a>
+										</li>
+										<li>
+											<a href="raspisanie.html">Расписание уроков</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h1>Наши контакты</h1>
+									<ul>
+										<li>
+											<a href="https://vk.com/club215617032" target="_blank">Группа вконтакте</a>
+										</li>
+										<li>
+											<a href="">+7(920)200-20-20</a>
+										</li>
+										<li>
+											<a href="">10bschool@gmail.com</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</div>
+	<script src="dft.js"></script>
+</body>
+</html>
